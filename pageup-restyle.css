@@ -96,6 +96,9 @@
 #pup-aside #search-filters h3:not(.active) + .filter-wrapper {
   display: none;
 }
+#pup-aside #search-filters h3.active + .filter-wrapper {
+  display: block;
+}
 #pup-aside #search-filters h3::after {
   content: '';
   width: 10px;
