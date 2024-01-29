@@ -2,8 +2,9 @@
   --hb-bg-1: #f9f9f7;
   --hb-dark1: #000;
   --hb-light: #fff;
-  --hb-color1: #121f3f;
+  --hb-color1: #000;
   --hb-color1a: rgba(18, 31, 63, 0.5);
+  --hb-font1: "Calibri", sans-serif;
 }
 .fc-jobs {
   width: 100%;
@@ -12,6 +13,7 @@
   margin-inline: auto;
   margin-block: 20px;
   box-sizing: border-box;
+  font-family: var(--hb-font1);
 }
 .fc-jobs #jobs-form td {
   border-top: transparent;
@@ -91,7 +93,7 @@
   position: relative;
   cursor: pointer;
 }
-#pup-aside #search-filters h3:not(.active) + .filter-wrapper {
+#pup-aside #search-filters h3.active + .filter-wrapper {
   display: none;
 }
 #pup-aside #search-filters h3::after {
