@@ -93,7 +93,7 @@
   position: relative;
   cursor: pointer;
 }
-#pup-aside #search-filters h3.active + .filter-wrapper {
+#pup-aside #search-filters h3:not(.active) + .filter-wrapper {
   display: none;
 }
 #pup-aside #search-filters h3::after {
@@ -124,12 +124,24 @@
 }
 #pup-aside #filter-results-submit {
   background-color: var(--hb-color1);
+  background-image: none;
   color: var(--hb-light);
-  line-height: 120%;
   padding: 10px;
   box-sizing: border-box;
-  height: 30px;
   transition: all 0.25s linear;
+  line-height: 100%;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 2rem;
+  text-decoration: none;
+  transition: box-shadow 0.2s;
+  display: flex;
+}
+#pup-aside #filter-results-submit:hover {
+  background-color: var(--hb-color1) !important;
+  background-image: none;
 }
 #pup-aside ul.filter {
   max-height: 171px;
@@ -161,6 +173,14 @@
   font-size: 16px;
   line-height: 150%;
   font-weight: normal;
+}
+#pup-aside ul.filter li input[type="checkbox"] {
+  margin: 0;
+  margin-right: 39px;
+  transform: translateY(4px);
+  float: right;
+  line-height: 100%;
+  opacity: 1;
 }
 #pup-aside ul.filter li input[type="checkbox"]:checked + label {
   text-decoration: underline;
@@ -296,6 +316,11 @@
   background-color: var(--hb-color1);
   color: var(--hb-light);
   margin: 0;
+  border-radius: 6.25rem;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-image: unset;
+  font-size: 1.125rem;
 }
 #job #job-content #job-details + p + p a.apply-link.button,
 #job #job-content #job-details + p + p a.back-link.button,
