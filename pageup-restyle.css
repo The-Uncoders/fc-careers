@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 30px 80px;
+  gap: 30px 60px;
 }
 @media (max-width: 888px) {
   .careers-browse {
@@ -62,11 +62,15 @@
 }
 #pup-aside {
   background-color: var(--hb-bg-1);
-  padding: 15px;
+  width: unset;
+  max-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 @media (max-width: 888px) {
   #pup-aside {
-    order: 2;
+    order: -1;
+    max-width: unset;
   }
 }
 #pup-aside h2,
@@ -82,6 +86,25 @@
   font-size: 16px;
   line-height: 150%;
   font-weight: normal;
+}
+#pup-aside #search-filters h3 {
+  position: relative;
+  cursor: pointer;
+}
+#pup-aside #search-filters h3:not(.active) + .filter-wrapper {
+  display: none;
+}
+#pup-aside #search-filters h3::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: translateX(-130%) translateY(50%) rotate(-45deg);
 }
 #pup-aside #search-keyword {
   box-shadow: none;
@@ -137,6 +160,9 @@
   line-height: 150%;
   font-weight: normal;
 }
+#pup-aside ul.filter li input[type="checkbox"]:checked + label {
+  text-decoration: underline;
+}
 #pup-aside ul.filter li label {
   padding-right: 27px;
   margin-right: 8px;
@@ -159,6 +185,11 @@
 #pup-aside ul.filter li span.count::before,
 #pup-aside ul.filter li span.count::after {
   content: '';
+}
+#pup-content {
+  padding-right: 0;
+  width: 100%;
+  max-width: 1000px;
 }
 #pup-content #messages .success {
   background-color: var(--hb-bg-1);
@@ -244,6 +275,13 @@
   line-height: 150%;
   font-weight: normal;
   padding-top: 0;
+}
+#job #job-content a.apply-link.button {
+  width: min-content;
+  height: auto;
+  background-color: var(--hb-color1);
+  color: var(--hb-light);
+  margin: 0;
 }
 #job #job-content #job-details + p + p {
   display: flex;
