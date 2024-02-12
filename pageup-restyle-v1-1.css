@@ -315,6 +315,13 @@
   font-weight: normal;
   padding-top: 0;
 }
+#job #job-content li:not(:has(p)) {
+  letter-spacing: -0.02em;
+  margin-bottom: 0.625rem;
+  font-family: calibri, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
 #job #job-content a.apply-link.button {
   width: min-content;
   height: auto;
