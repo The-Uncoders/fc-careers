@@ -364,4 +364,7 @@
 #job #job-content #job-details + p + p a.employee-referral-link.button {
   margin: 0;
 }
+  div#job-details * {
+    font-size: 18px !important;
+}
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
