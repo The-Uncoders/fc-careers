@@ -369,8 +369,10 @@
 }
 /* Job Alerts Section */
 #pup-job-alerts {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
+
 #pup-job-alerts h2 {
   font-size: 18px;
   font-weight: bold;
@@ -378,25 +380,29 @@
   margin-top: 0;
   border: none;
 }
+
 #pup-job-alerts a {
-  display: inline-flex;
-  width: min-content;
-  height: auto;
   background-color: var(--hb-color1);
-  color: var(--hb-light) !important;
-  margin: 0;
+  background-image: none;
+  color: var(--hb-light);
+  padding: 10px;
+  box-sizing: border-box;
+  height: 30px;
+  transition: all 0.25s linear;
+  line-height: 100%;
+  font-size: 1.125rem;
   border-radius: 6.25rem;
   justify-content: center;
   align-items: center;
   padding: 0.875rem 2rem;
-  background-image: none;
-  font-size: 1rem;
   text-decoration: none;
   transition: box-shadow 0.2s;
-  font-family: var(--hb-font1);
+  display: flex;
+  width: calc(100% - 20px);
 }
+
 #pup-job-alerts a:hover {
   background-color: var(--hb-color1) !important;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  background-image: none;
 }
 /*# sourceMappingURL=pageup-restyle-v1.2.css.map */
