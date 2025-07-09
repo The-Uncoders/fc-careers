@@ -364,39 +364,4 @@
 #job #job-content #job-details + p + p a.employee-referral-link.button {
   margin: 0;
 }
-/* Job Alerts Section */
-#pup-job-alerts {
-  margin-bottom: 20px;
-}
-
-#pup-job-alerts h2 {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 150%;
-  margin-top: 0;
-  border: none;
-}
-
-#pup-job-alerts a {
-  display: inline-flex;
-  width: min-content;
-  height: auto;
-  background-color: var(--hb-color1);
-  color: var(--hb-light) !important;
-  margin: 0;
-  border-radius: 6.25rem;
-  justify-content: center;
-  align-items: center;
-  padding: 0.875rem 2rem;
-  background-image: none;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: box-shadow 0.2s;
-  font-family: var(--hb-font1);
-}
-
-#pup-job-alerts a:hover {
-  background-color: var(--hb-color1) !important;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
