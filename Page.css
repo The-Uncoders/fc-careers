@@ -364,4 +364,36 @@
 #job #job-content #job-details + p + p a.employee-referral-link.button {
   margin: 0;
 }
+/* Job Alerts Subscribe Section */
+.fc-job-alerts {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: var(--hb-bg-1);
+  border: 1px solid var(--hb-color1a);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.fc-job-alerts h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--hb-color1);
+}
+
+.fc-job-alerts a {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: var(--hb-color1);
+  color: var(--hb-light);
+  text-decoration: none;
+  border-radius: 6.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fc-job-alerts a:hover {
+  background-color: #004b99; /* fallback for hover */
+  transform: translateY(-1px);
+}
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
