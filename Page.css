@@ -472,4 +472,81 @@
   color: red;
   font-weight: bold;
 }
+/* ---------------------------
+   Job Mail Subscription Styling
+   Safe to append at the end
+---------------------------- */
+
+/* Subscription form container */
+#pup-content #job-mail {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--hb-bg-1);
+  border: 1px solid var(--hb-color1a);
+  border-radius: 8px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Subscription form headings */
+#pup-content #job-mail h2,
+#pup-content #job-mail h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--hb-color1);
+}
+
+/* Subscription form input fields */
+#pup-content #job-mail input[type="email"],
+#pup-content #job-mail input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--hb-color1a);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Subscribe button + job alerts links */
+#pup-content #job-mail button,
+#pup-content #job-mail input[type="submit"],
+.fc-job-alerts a,
+.fc-job-alerts button {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: var(--hb-color1);
+  color: var(--hb-light);
+  text-decoration: none;
+  border-radius: 6.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover state for subscribe button and links */
+#pup-content #job-mail button:hover,
+#pup-content #job-mail input[type="submit"]:hover,
+.fc-job-alerts a:hover,
+.fc-job-alerts button:hover {
+  background-color: #004b99;
+  transform: translateY(-1px);
+}
+
+/* Confirmation and error messages inside job-mail */
+#pup-content #job-mail .message,
+#pup-content #job-mail .success,
+#pup-content #job-mail .error {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--hb-color1);
+}
+
+#pup-content #job-mail .error {
+  color: red;
+  font-weight: bold;
+}
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
