@@ -364,45 +364,4 @@
 #job #job-content #job-details + p + p a.employee-referral-link.button {
   margin: 0;
 }
-/* ---------------------------
-   Job Alerts Subscribe Section
----------------------------- */
-.fc-job-alerts {
-  margin: 20px 0;
-  padding: 15px;
-  background-color: var(--hb-bg-1);
-  border: 1px solid var(--hb-color1a);
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* If you want the 'Job Alerts' heading larger than the default sidebar h2, keep this. Otherwise remove it. */
-.fc-job-alerts h2,
-.fc-job-alerts h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: var(--hb-color1);
-}
-
-/* Support both <a> and <button> render for the PageUp subscribe link */
-.fc-job-alerts a,
-.fc-job-alerts button {
-  display: inline-block;
-  padding: 10px 24px;
-  background-color: var(--hb-color1);
-  color: var(--hb-light);
-  text-decoration: none;
-  border-radius: 6.25rem;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.fc-job-alerts a:hover,
-.fc-job-alerts button:hover {
-  background-color: #004b99;
-  transform: translateY(-1px);
-}
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
