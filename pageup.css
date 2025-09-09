@@ -15,6 +15,136 @@
   box-sizing: border-box;
   font-family: var(--hb-font1);
 }
+.fc-jobs #pup-job-alerts {
+  margin-top: 10px;
+  padding-top: 30px;
+  position: relative;
+}
+.fc-jobs #pup-job-alerts::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: 20px;
+  background: var(--hb-light);
+}
+.fc-jobs #subscribe a.back-link.button,
+.fc-jobs #subscribe #job-mail-subscribe-button {
+  background-color: var(--hb-color1);
+  background-image: none;
+  color: var(--hb-light);
+  padding: 10px;
+  box-sizing: border-box;
+  height: 30px;
+  transition: all 0.25s linear;
+  line-height: 100%;
+  width: fit-content;
+  margin-block: 10px;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 2rem;
+  text-decoration: none;
+  transition: box-shadow 0.2s;
+  display: flex;
+}
+.fc-jobs #subscribe a.back-link.button:hover,
+.fc-jobs #subscribe #job-mail-subscribe-button:hover {
+  background-color: var(--hb-color1) !important;
+  background-image: none;
+}
+@media (max-width: 889px) {
+  .fc-jobs #subscribe a.back-link.button,
+  .fc-jobs #subscribe #job-mail-subscribe-button {
+    padding-inline: 10px;
+    width: calc(100% - 20px);
+  }
+}
+.fc-jobs #subscribe input#job-mail-subscribe-email,
+.fc-jobs #subscribe input#search-keyword {
+  box-shadow: none;
+  padding: 10px;
+  box-sizing: border-box;
+  height: unset;
+  width: 100%;
+  max-width: 260px;
+  color: var(--hb-dark1);
+  background-image: none;
+  border: 1px solid var(--hb-color1);
+}
+.fc-jobs #subscribe .filterPane {
+  margin-bottom: 20px;
+}
+.fc-jobs #subscribe .filterPane > h3 {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  line-height: 150%;
+}
+.fc-jobs #subscribe .filterPane > h3:not(.active) + div.filter-wrapper {
+  display: none !important;
+}
+.fc-jobs #subscribe .filterPane > h3::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: translateY(-2px) rotate(-45deg);
+}
+.fc-jobs #subscribe ul.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fc-jobs #subscribe ul.filter li {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fc-jobs #subscribe ul.filter li input[type="checkbox"]:checked + label {
+  text-shadow: 0 0 0.5px var(--hb-color1);
+}
+.fc-jobs #subscribe ul.filter li label {
+  line-height: 100%;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+}
+.fc-jobs #subscribe .filter-group-title {
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+.fc-jobs #subscribe .filter-group-title:not(.active) + ul.filter {
+  display: none !important;
+}
+.fc-jobs #subscribe .filter-group-title::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: translateY(-2px) rotate(-45deg);
+}
 .fc-jobs #jobs-form td {
   border-top: transparent;
 }
@@ -125,11 +255,12 @@
   font-weight: bold;
   text-decoration: underline;
 }
-#pup-aside #filter-results-submit {
+#pup-aside #filter-results-submit,
+#pup-aside a.job-mail-subscribe-link.button {
   background-color: var(--hb-color1);
   background-image: none;
   color: var(--hb-light);
-  padding: 10px;
+  padding: 10px 20px;
   box-sizing: border-box;
   height: 30px;
   transition: all 0.25s linear;
@@ -143,15 +274,20 @@
   transition: box-shadow 0.2s;
   display: flex;
 }
-#pup-aside #filter-results-submit:hover {
+#pup-aside #filter-results-submit:hover,
+#pup-aside a.job-mail-subscribe-link.button:hover {
   background-color: var(--hb-color1) !important;
   background-image: none;
 }
 @media (max-width: 889px) {
-  #pup-aside #filter-results-submit {
-    padding-inline: 10px;
+  #pup-aside #filter-results-submit,
+  #pup-aside a.job-mail-subscribe-link.button {
+    padding: 8px 16px;
     width: calc(100% - 20px);
   }
+}
+#pup-aside a.job-mail-subscribe-link.button {
+  width: fit-content;
 }
 #pup-aside ul.filter {
   max-height: unset;
@@ -364,3 +500,4 @@
 #job #job-content #job-details + p + p a.employee-referral-link.button {
   margin: 0;
 }
+/*# sourceMappingURL=pageup-restyle-v1.css.map */
