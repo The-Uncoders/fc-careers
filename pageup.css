@@ -36,6 +36,7 @@
   background-image: none;
   color: var(--hb-light);
   padding: 10px;
+  margin-top: 10px;
   box-sizing: border-box;
   height: 20px;
   transition: all 0.25s linear;
@@ -498,6 +499,6 @@
 #job #job-content #job-details + p + p a.apply-link.button,
 #job #job-content #job-details + p + p a.back-link.button,
 #job #job-content #job-details + p + p a.employee-referral-link.button {
-  margin: 0;
+  margin: 10;
 }
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
