@@ -465,17 +465,18 @@
   line-height: 1.5;
 }
 #job #job-content a.apply-link.button {
-  ackground-color: var(--hb-color1);
+  background-color: var(--hb-color1);
   background-image: none;
   color: var(--hb-light);
-  padding: 10px;
+  padding: 0.475rem 1.5rem;
   box-sizing: border-box;
-  height: 20px;
+  height: auto;
   transition: all 0.25s linear;
   line-height: 100%;
   width: fit-content;
+  white-space: nowrap;
   margin-block: 10px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   border-radius: 6.25rem;
   justify-content: center;
   align-items: center;
@@ -489,20 +490,24 @@
   gap: 15px;
 }
 #job #job-content #job-details + p + p a {
-  width: min-content;
+  width: auto;
+  white-space: nowrap;
   height: auto;
   background-color: var(--hb-color1);
   color: var(--hb-light);
   margin: 0;
   border-radius: 6.25rem;
   justify-content: center;
+  align-items: center;
   padding: 0.475rem 1.5rem;
   background-image: unset;
   font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
 }
 #job #job-content #job-details + p + p a.apply-link.button,
 #job #job-content #job-details + p + p a.back-link.button,
 #job #job-content #job-details + p + p a.employee-referral-link.button {
-  margin: 10;
+  margin: 0;
 }
 /*# sourceMappingURL=pageup-restyle-v1.css.map */
