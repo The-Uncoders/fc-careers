@@ -1,3 +1,10 @@
+/* =============================================
+   PageUp Custom Code — Webflow Integration
+   Phase 3: ID/tag/attribute/positional selectors
+   that cannot be expressed as Webflow classes.
+   ============================================= */
+
+/* --- CSS Variables (bridge to Webflow PageUp collection) --- */
 :root {
   --hb-bg-1: #f9f9f7;
   --hb-dark1: #000;
@@ -6,6 +13,8 @@
   --hb-color1a: rgba(18, 31, 63, 0.5);
   --hb-font1: "Calibri", sans-serif;
 }
+
+/* --- Container --- */
 .fc-jobs {
   width: 100%;
   max-width: 1400px;
@@ -15,6 +24,10 @@
   box-sizing: border-box;
   font-family: var(--hb-font1);
 }
+
+/* ===================
+   SUBSCRIBE SECTION
+   =================== */
 .fc-jobs #pup-job-alerts {
   margin-top: 10px;
   padding-top: 30px;
@@ -30,6 +43,8 @@
   height: 20px;
   background: var(--hb-light);
 }
+
+/* Subscribe buttons (ID-based) */
 .fc-jobs #subscribe a.back-link.button,
 .fc-jobs #subscribe #job-mail-subscribe-button {
   background-color: var(--hb-color1);
@@ -62,6 +77,8 @@
     width: calc(100% - 20px);
   }
 }
+
+/* Subscribe inputs (ID-based) */
 .fc-jobs #subscribe input#job-mail-subscribe-email,
 .fc-jobs #subscribe input#search-keyword {
   box-shadow: none;
@@ -74,9 +91,8 @@
   background-image: none;
   border: 1px solid var(--hb-color1);
 }
-.fc-jobs #subscribe .filterPane {
-  margin-bottom: 20px;
-}
+
+/* Subscribe filterPane headings (ID + tag) */
 .fc-jobs #subscribe .filterPane > h3 {
   position: relative;
   display: flex;
@@ -99,6 +115,8 @@
   border-left: 2px solid #000;
   transform: translateY(-2px) rotate(-45deg);
 }
+
+/* Subscribe filter lists (tag selectors) */
 .fc-jobs #subscribe ul.filter {
   display: flex;
   flex-direction: column;
@@ -120,6 +138,8 @@
   font-size: 16px;
   font-weight: normal;
 }
+
+/* Subscribe filter group titles */
 .fc-jobs #subscribe .filter-group-title {
   cursor: pointer;
   width: fit-content;
@@ -144,6 +164,8 @@
   border-left: 2px solid #000;
   transform: translateY(-2px) rotate(-45deg);
 }
+
+/* Jobs form (ID-based) */
 .fc-jobs #jobs-form td {
   border-top: transparent;
 }
@@ -162,6 +184,10 @@
   box-sizing: border-box;
   padding: 10px;
 }
+
+/* ===============
+   LAYOUT CLASSES
+   =============== */
 .careers-browse {
   display: flex;
   justify-content: space-between;
@@ -191,6 +217,10 @@
   font-weight: bold;
   line-height: 150%;
 }
+
+/* ===============
+   SIDEBAR (#pup-aside)
+   =============== */
 #pup-aside {
   background-color: var(--hb-bg-1);
   width: unset;
@@ -254,6 +284,8 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Sidebar buttons (ID-based) */
 #pup-aside #filter-results-submit,
 #pup-aside a.job-mail-subscribe-link.button {
   background-color: var(--hb-color1);
@@ -288,6 +320,8 @@
 #pup-aside a.job-mail-subscribe-link.button {
   width: fit-content;
 }
+
+/* Sidebar filter lists (tag + attribute selectors) */
 #pup-aside ul.filter {
   max-height: unset;
   height: 100%;
@@ -354,6 +388,10 @@
 #pup-aside ul.filter li span.count::after {
   content: '';
 }
+
+/* =====================
+   CONTENT AREA (#pup-content)
+   ===================== */
 #pup-content {
   padding-right: 0;
   width: 100%;
@@ -372,6 +410,8 @@
   line-height: 150%;
   margin-top: 0;
 }
+
+/* Job listing table / cards */
 #pup-content table thead {
   display: none;
 }
@@ -457,6 +497,10 @@
   font-weight: normal;
   padding-top: 0;
 }
+
+/* =====================
+   JOB POST PAGE (#job)
+   ===================== */
 #job #job-content li:not(:has(p)) {
   letter-spacing: -0.02em;
   margin-bottom: 0.625rem;
@@ -484,6 +528,8 @@
   transition: box-shadow 0.2s;
   display: flex;
 }
+
+/* Job action buttons container */
 #job #job-content #job-details + p + p {
   display: flex;
   flex-wrap: wrap;
@@ -510,4 +556,3 @@
 #job #job-content #job-details + p + p a.employee-referral-link.button {
   margin: 0;
 }
-/*# sourceMappingURL=pageup-restyle-v1.css.map */
