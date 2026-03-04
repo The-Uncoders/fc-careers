@@ -508,6 +508,40 @@
   font-size: 1.4em;
   line-height: 1.5;
 }
+
+/* Top section: buttons + metadata paragraph */
+#job #job-content > h2 + p {
+  display: block;
+}
+#job #job-content > h2 + p > span:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  float: none !important;
+  width: 100%;
+}
+#job #job-content > h2 + p > span:first-child a {
+  float: none !important;
+  background-color: var(--hb-color1);
+  background-image: none;
+  color: var(--hb-light);
+  padding: 0.875rem 2rem;
+  box-sizing: border-box;
+  height: auto;
+  transition: box-shadow 0.2s;
+  line-height: 100%;
+  width: fit-content;
+  white-space: nowrap;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* Standalone apply button (outside the span) */
 #job #job-content a.apply-link.button {
   background-color: var(--hb-color1);
   background-image: none;
@@ -529,7 +563,7 @@
   display: flex;
 }
 
-/* Job action buttons container */
+/* Bottom action buttons container */
 #job #job-content #job-details + p + p {
   display: flex;
   flex-wrap: wrap;
